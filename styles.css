@@ -1,0 +1,104 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body background with a cool image */
+body {
+  background-image: url('background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif; /* Fallback font */
+  color: #333; /* Default text color */
+}
+
+/* Header styling */
+header {
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Main section styling */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Adjust based on content */
+  padding: 20px;
+}
+
+.main-content p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .main-content img {
+    margin-top: 20px;
+  }
+}
